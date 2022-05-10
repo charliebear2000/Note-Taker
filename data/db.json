@@ -1,26 +1,20 @@
 {
   "notes": [
+    
     {
-      "title": "Test Title",
-      "text": "Test text"
-    },
-    {
-      "notes": [
-        {
-          "title": "Test Title",
-          "text": "Test text"
-        }
-      ],
+      "title": "Order inventory",
+      "text": "sticker paper, ink, cricut needles",
       "id": "1"
     },
     {
-      "notes": [
-        {
-          "title": "Test Title",
-          "text": "Test text"
-        }
-      ],
+      "title": "Work on marketing info",
+      "text": "facebook, instagram, tik-tok",
       "id": "2"
-    }
+    },
+    {
+        "title": "fill orders",
+        "text": "add employee hours to fulfill",
+        "id": "3"
+      }
   ]
 }

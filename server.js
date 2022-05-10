@@ -8,11 +8,23 @@ app.use(express.urlencoded({extended: true}));
 //  parse incoming JSON data
 app.use(express.json());
 
+app.use(express.static('public'));
+
 const { notes } = require('./data/db');
 
 app.get('/api/notes', (req, res) => {
    
    res.json(notes);
+});
+
+// route to index file
+app.get('/', (req, res) => {
+   res.sendFile(path.join(__dirname, '.public/index.html'));
+});
+
+// route to notes file
+app.get('/notes', (req, res) => {
+   res.sendFile(path.join(__dirname, './public/notes.html'));
 });
 
 app.post('/api/notes', (req, res) => {
@@ -29,6 +41,19 @@ app.post('/api/notes', (req, res) => {
    
    res.json(note);
    }
+});
+
+app.delete('/api/notes/:id', (req, res) => {
+   const id = req.params.id;
+   let note;
+
+   notes.map((element, index) => {
+      if(element.id == id) {
+         note = element
+         notes.splice(index, 1)
+         return res.json(note);
+      }
+   })
 });
 
 function createNewNote(body, notesArray) {
