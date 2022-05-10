@@ -10,7 +10,7 @@
 
 ## Description:
 
-This application can be used to write and save notes. The application uses Express.js and will save and retrieve note data from a JON file.
+This application can be used to write and save notes. The application uses Express.js and will save and retrieve note data from a JSON file.
 
 ![Screenshot](https://user-images.githubusercontent.com/99057802/167524502-32a68de4-301f-4427-bf80-8dd27745e81d.png)
 
