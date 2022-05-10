@@ -43,6 +43,7 @@ app.post('/api/notes', (req, res) => {
    }
 });
 
+// deletes notes
 app.delete('/api/notes/:id', (req, res) => {
    const id = req.params.id;
    let note;
@@ -56,6 +57,7 @@ app.delete('/api/notes/:id', (req, res) => {
    })
 });
 
+//  creates notes
 function createNewNote(body, notesArray) {
    const note = body;
    notesArray.push(note);
@@ -67,6 +69,7 @@ function createNewNote(body, notesArray) {
    return note;
 }
 
+// validates syntax of new notes
 function validateNote(note) {
    if (!note.title || typeof note.title !== 'string') {
       return false;
