@@ -12,7 +12,7 @@
 
 This application can be used to write and save notes. The application uses Express.js and will save and retrieve note data from a JON file.
 
-![Note-Taker-website](https://github.com/charliebear2000/Note-Taker/blob/main/screenshot.png?raw=true)
+![Screenshot](https://user-images.githubusercontent.com/99057802/167524502-32a68de4-301f-4427-bf80-8dd27745e81d.png)
 
 ## Usage:
   
